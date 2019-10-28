@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700,800,900&display=swap&subset=cyrillic-ext");
+a {
+  text-decoration: none; }
+
+ul {
+  list-style: none; }
+
+body,
+h2,
+p {
+  margin: 0; }
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 944px;
+  padding: 0;
+  margin: 0 auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+.page-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 50px; }
+  .page-header__nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .page-header__nav-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0;
+    margin: 0; }
+  .page-header__nav-item {
+    margin-left: 20px; }
+  .page-header__nav-item:first-child {
+    margin-left: 0; }
+  .page-header__nav-link {
+    display: inline-block;
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: uppercase;
+    line-height: 60px;
+    color: #000; }
+  .page-header__nav-link:hover {
+    color: #00acdc; }
+  .page-header .is-active {
+    position: relative;
+    color: #00acdc; }
+  .page-header .is-active::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #00acdc; }
+
+.product {
+  border: 1px solid #f3f3f3;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 200px;
+  height: 403px;
+  padding: 30px 14px 14px;
+  margin: 50px 0 0;
+  font-family: "Roboto", sans-serif;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #000; }
+  .product__picture {
+    width: 160px;
+    height: 134px;
+    margin: 0 5px 41px; }
+  .product__name {
+    font-weight: 500;
+    font-size: 12px;
+    margin-bottom: 5px;
+    line-height: 15px; }
+  .product__code {
+    font-weight: normal;
+    font-size: 11px;
+    margin-bottom: 15px;
+    line-height: 13px; }
+  .product__description {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 20px; }
+  .product__text {
+    font-size: 11px;
+    font-weight: normal; }
+  .product__price-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    margin-bottom: 20px; }
+  .product__price {
+    font-size: 16px;
+    font-weight: bold; }
+  .product__button {
+    background-color: #00acdc;
+    display: block;
+    padding: 11px 10px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 16px;
+    font-style: normal;
+    font-weight: bold;
+    text-align: center; }
+  .product__button:hover {
+    border-color: #00acdc;
+    color: #00acdc;
+    background-color: #fff; }
+
+.stars {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .stars div:nth-child(-n + 5) {
+    height: 15px;
+    width: 15px;
+    margin-right: 4px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background: url("../images/star.svg") no-repeat; }
+
+.stars--1 > div:nth-child(-n + 1) {
+  height: 15px;
+  width: 15px;
+  margin-right: 4px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background: url("../images/star-active.svg") no-repeat; }
+
+.stars--2 > div:nth-child(-n + 2) {
+  height: 15px;
+  width: 15px;
+  margin-right: 4px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background: url("../images/star-active.svg") no-repeat; }
+
+.stars--3 > div:nth-child(-n + 3) {
+  height: 15px;
+  width: 15px;
+  margin-right: 4px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background: url("../images/star-active.svg") no-repeat; }
+
+.stars--4 > div:nth-child(-n + 4) {
+  height: 15px;
+  width: 15px;
+  margin-right: 4px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background: url("../images/star-active.svg") no-repeat; }
+
+.stars--5 > div:nth-child(-n + 5) {
+  height: 15px;
+  width: 15px;
+  margin-right: 4px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background: url("../images/star-active.svg") no-repeat; }
+
+/*# sourceMappingURL=main.css.map */
